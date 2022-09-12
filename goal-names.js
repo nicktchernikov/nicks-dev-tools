@@ -16,3 +16,6 @@ const convert = () => {
 	});
 	document.querySelector('.result').textContent = result;
 }
+
+const button = document.querySelector('.convert-button');
+button.addEventListener('click', handleSubmit);
