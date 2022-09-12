@@ -9,8 +9,8 @@ const convert = (text) => {
 	let result = '';
 	lines.forEach(line => {
 		const alphaNum = line.replace(/[^a-z0-9 ]/gi, '');
-		const goalName = alphaNum.toUpperCase().replace(' ', '_');
-		const apiName = alphaNum.toLowerCase().replace(' ', '-');
+		const goalName = alphaNum.toUpperCase().replace(/ +/gi, '_');
+		const apiName = alphaNum.toLowerCase().replace(/ +/gi, '-');
 		const googleApiName = `wf-track--${apiName}-e${expNum}`;
 		result += `CLICKS_TO_${goalName} = '${googleApiName}';<br />`;
 	});
