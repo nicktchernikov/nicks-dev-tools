@@ -12,7 +12,7 @@ const convert = (text) => {
 		const goalName = alphaNum.toUpperCase().replace(' ', '_');
 		const apiName = alphaNum.toLowerCase().replace(' ', '-');
 		const googleApiName = `wf-track--${apiName}-e${expNum}`;
-		result += `${goalName} = '${googleApiName}';\n`;
+		result += `CLICKS_TO_${goalName} = '${googleApiName}';<br />`;
 	});
-	document.querySelector('.result').textContent = result;
+	document.querySelector('.result').innerHTML = result;
 }
