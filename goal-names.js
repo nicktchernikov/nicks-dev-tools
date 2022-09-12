@@ -3,7 +3,7 @@ const handleSubmit = () => {
 	console.log('>>>>', convert(text));
 }
 
-const convert = () => {
+const convert = (text) => {
 	const lines = text.split('\n');
 	const expNum = document.querySelector('.input-exp-num').value;
 	let result = '';
