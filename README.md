@@ -1,3 +1,3 @@
-# nicks-dev-tools
+# My developer tools
 
-These are various tools that I may find useful at times to simplify A/B testing programming work, etc.
+This repo contains some developer tools that I create to make my life easier.
